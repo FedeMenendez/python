@@ -1,0 +1,7 @@
+#calculo salario con dos entradas
+horas= int (input ("introduzca las horas trabajadas: "))
+precio=int (input("introduzca en valor de la hora de trabajo: "))
+
+#salario=horas * precio
+
+print ("el valor del salario es: ", horas * precio)
