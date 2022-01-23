@@ -1,0 +1,13 @@
+#Reescribe el programa del salario usando try y except, de modo que el programa sea capaz de gestionar entradas no numéricas con elegancia, mostrando un mensaje y saliendo del programa. 
+horas = input ("introduzca las horas trabajadas: ")
+precio =int (input("introduzca en valor de la hora de trabajo: "))
+try:
+  #salario=horas * precio
+  hora = float (horas)
+  precios = float (precio)    
+  if horas>40:
+    print ("el valor del salario es: ", 40 * precio + (hora-40)*precio*1.5)
+  else:
+    print ("el valor del salario es: ", hora * precio)
+except:
+  print ("el valor introducido no es un numero")
