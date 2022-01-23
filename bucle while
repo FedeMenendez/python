@@ -1,0 +1,16 @@
+Escribe un programa que lea repetidamente números hasta que el usuario introduzca “ﬁn”. Una vez se haya introducido “ﬁn”, muestra por pantalla el total, la cantidad de números y la media de esos números. Si el usuario introduce cualquier otra cosa que no sea un número, detecta su fallo usando try y except, muestra un mensaje de error y pasa al número siguiente.
+
+i=0
+resultado=0
+entrada= input('introduzca un numero o fin para finalizar: ')
+while entrada != 'fin':
+    try:
+        numero = int (entrada)
+        resultado= resultado + numero
+        i=i+1
+        entrada= input('introduzca un numero o fin para finalizar: ')
+    except:
+        print ("el valor introducido no es un numero")
+        entrada= input('introduzca un numero o fin para finalizar: ')
+
+print (resultado,i,resultado/i)
