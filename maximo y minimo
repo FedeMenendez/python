@@ -1,0 +1,33 @@
+Escribe otro programa que pida una lista de números como la anterior y al ﬁnal muestre por pantalla el máximo y mínimo de los números, en vez de la media.
+
+def maximo (maxim):
+    mayor = None
+    for numero in maxim:
+        if mayor is None or numero > mayor :
+            mayor = numero
+
+    print ('el mayor numero es: ',mayor)    
+
+def minimo (minim):
+    menor = None
+    for numero in minim:
+        if menor is None or numero < menor:
+            menor = numero
+    print ('el menor numero es: ',menor)
+    
+i=0
+resultado=[]
+entrada= input('introduzca un numero o fin para finalizar: ')
+while entrada != 'fin':
+    try:
+        numero= int (entrada)
+        resultado.append (numero)
+        
+        i=i+1
+        entrada= input('introduzca un numero o fin para finalizar: ')
+    except:
+        print ("el valor introducido no es un numero")
+        entrada= input('introduzca un numero o fin para finalizar: ')
+
+maximo (resultado)
+minimo (resultado)
