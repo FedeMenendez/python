@@ -1,0 +1,11 @@
+Reescribe el programa de cálculo del salario, con tarifa-y media para las horas extras, y crea una función llamada calculo_salario que reciba dos parámetros (horas y tarifa)
+
+def calculo_salario (tarifa,horas):
+    if horas<41:
+        print ('el salario es:',tarifa*horas)
+    else:
+        print ('el salario es:', 40 * tarifa + (horas-40)*tarifa*1.5)
+        
+tarifa= int (input('ingrese la tarifa: '))
+horas= int(input ('ingrese las horas de trabajo: '))
+calculo_salario (tarifa,horas)
