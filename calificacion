@@ -1,0 +1,23 @@
+Escribe un programa que solicite una puntuación entre 0.0 y 1.0. Si la puntuación está fuera de ese rango, muestra un mensaje de error. Si la puntuación está entre 0.0 y 1.0, muestra la 
+calificacion usando la tabla siguiente:
+Puntuación Calificación
+>= 0.9 Sobresaliente
+>= 0.8 Notable
+>= 0.7 Bien
+>= 0.6 Suficiente
+< 0.6 Insuficiente
+
+puntuacion = float(input ('ingrese un numero entre 0.0 y 1.0:'))
+if puntuacion >= 0 and puntuacion<=1.0:
+    if puntuacion>=0.9:
+        print ('sobresaliente')
+    elif puntuacion>=0.85 and puntuacion<0.9:
+        print ('notable')
+    elif puntuacion>=0.7 and puntuacion<0.85:
+        print ('Bien')
+    elif puntuacion>=0.6 and puntuacion<0.7: 
+        print ('Suficiente')
+    else:
+        print ('Insuficiente')
+else:
+    print ('la puntuacion ingresada es incorrecta')
