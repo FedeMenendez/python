@@ -1,0 +1,20 @@
+Reescribe el programa de caliﬁcaciones del capítulo anterior usando una función llamada calcula_calificacion, que reciba una puntuación como parámetro y devuelva una caliﬁcación como cadena.
+
+def calculo_calificacion (puntuacion):
+    if puntuacion>=0.9:
+        return ('sobresaliente')
+    elif puntuacion>=0.85 and puntuacion<0.9:
+        return('notable')
+    elif puntuacion>=0.7 and puntuacion<0.85:
+        return('Bien')
+    elif puntuacion>=0.6 and puntuacion<0.7: 
+        return ('Suficiente')
+    else:
+        return ('Insuficiente')
+
+puntuacion = float(input ('ingrese un numero entre 0.0 y 1.0:'))
+if puntuacion >= 0 and puntuacion<=1.0:
+   # nota=calculo_calificacion (puntuacion)
+    print ('la calificacion es: ' ,calculo_calificacion (puntuacion))
+else:
+    print ('la puntuacion ingresada es incorrecta')
