@@ -1,0 +1,19 @@
+igual al ejercicio calificacion1 solo se agrega un while para verificar la puntuacion
+def calculo_calificacion (puntuacion):
+    if puntuacion>=0.9:
+        return ('sobresaliente')
+    elif puntuacion>=0.85 and puntuacion<0.9:
+        return('notable')
+    elif puntuacion>=0.7 and puntuacion<0.85:
+        return('Bien')
+    elif puntuacion>=0.6 and puntuacion<0.7: 
+        return ('Suficiente')
+    else:
+        return ('Insuficiente')
+
+puntuacion = float(input ('ingrese un numero entre 0.0 y 1.0:'))
+while (puntuacion < 0 or puntuacion>1.0):
+    print ('la puntuacion ingresada es incorrecta')
+    puntuacion = float(input ('ingrese un numero entre 0.0 y 1.0:'))
+print ('la calificacion es: ' ,calculo_calificacion (puntuacion))
+
